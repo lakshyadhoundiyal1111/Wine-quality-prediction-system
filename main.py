@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\laksh\Desktop\wine quality prediction system\winequality.csv")
+df = pd.read_csv(r"winequality.csv")
 
 # Convert quality to binary labels: 1 for Good (>=7), 0 for Bad (<7)
 df['quality_label'] = df['quality'].apply( lambda x: 1 if x >= 7 else 0)
